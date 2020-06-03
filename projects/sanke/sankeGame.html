@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SANKE</title>
+    <meta charset="utf-8" />
+    <html lang="en">
+    <link rel="stylesheet" href="style_sanke.css">
+    <link rel="script" href="game.js">
+</head>
+
+<body bgcolor="#ebebd3">
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">Writtings</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+        <hr class="line">
+
+    <table style="text-align:center;">
+        <tr>
+            <td rowspan="4">
+                <canvas id="canvas" width="300" height="300"></canvas>
+                <script src="web-lib/processing.js"></script>
+                <script src="web-lib/functional-light.js"></script>
+                <script src="web-lib/snake-functions.js"></script>
+                <script src="game.js"></script>
+            </td>
+
+            <td rowspan="4">
+                <image src="images/space.png"></image>
+            </td>
+            <td colspan="2">
+
+                <button class="restartButton" onClick="processingInstance.restart()">
+                    RESTART
+                </button></td>
+            <td>
+                <p class="text"> DIFFICULTY :</p>
+            </td>
+            <td>
+
+                <button class="difButton" onClick="processingInstance.changeFrameRate(easy)">
+                    EASY
+                </button></td>
+            <td>
+                <button class="difButton" onClick="processingInstance.changeFrameRate(medium)">
+                    MEDIUM
+                </button></td>
+            <td>
+                <button class="difButton" onClick="processingInstance.changeFrameRate(hard)">
+                    HARD
+                </button></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="skinButton" onClick="processingInstance.changeSkin('defaultSkin')">
+                    <image src="images/defaultSkin/skin.png"></image><br><br>
+                    SANKE
+                </button></td>
+            <td colspan="2">
+                <button class="skinButton" onClick="processingInstance.changeSkin('skin1')">
+                    <image src="images/skin1/skin.png"></image><br><br>
+                    Ice Snake
+                </button></td>
+            <td colspan="2">
+                <button class="skinButton" onClick="processingInstance.changeSkin('skin2')">
+                    <image src="images/skin2/skin.png"></image><br><br>
+                    Anthill
+                </button></td>
+        </tr>
+        <tr>
+
+            <td colspan="3">
+                <button class="skinButton" onClick="processingInstance.changeSkin('skin3')">
+                    <center>
+                        <image src="images/skin3/skin.png"></image><br><br>
+                        M.E.L.O BOT
+                    </center>
+                </button></td>
+            <td colspan="3">
+                <button class="skinButton" onClick="processingInstance.changeSkin('skin4')">
+                    <image src="images/skin4/skin.png"></image><br><br>
+                    Classic Snake
+                </button></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

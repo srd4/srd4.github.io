@@ -14,19 +14,19 @@ body{
     width: 100%;
 }
 
-#project_image1 {
-    background-image: url(sanke.PNG);
+#image1 {
+    background-image: url(krashen.PNG);
 }
 
 
 
 
-.project_image {
+.image {
     display: block;
     position: relative;
     width: 100%;
     height: 100px;
-    background-image: url(sanke.png);
+    background-image: url(krashen.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

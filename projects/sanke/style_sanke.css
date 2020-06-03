@@ -25,16 +25,40 @@ body{
     font-size: 1em;
 }
 
+@media (max-width: 900px){
+    .content{
+        width: 80%;
+    }
+    
+}
+
 .mainTitle {
     font-size: 30px;
     color: #383838;
     padding: 1% 1%;
 }
 
+#project_image2 {
+    background-image: url(sankeClickToStart.PNG);
+}
+
+.project_image2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-image: url(sankeClickToStart.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 nav {
     margin: 0 0 0 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     position: sticky;
     display: inline-block;
 }
